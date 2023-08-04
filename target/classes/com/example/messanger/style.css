@@ -1,0 +1,54 @@
+.root {
+    -fx-accent: #373e32;
+    -fx-focus-color: -fx-accent;
+    -fx-base: #373e55;
+    -fx-control-inner-background: derive(-fx-base, 35%);
+    -fx-control-inner-background-alt: -fx-control-inner-background ;
+}
+
+.label{
+    -fx-text-fill: lightgray;
+}
+
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background;
+    -fx-background-insets: 0, 0 4 2 0;
+    -fx-border-radius: 0;
+    -fx-text-fill: lightgray;
+    -fx-prompt-text-fill: lightgray;
+}
+
+/*.text-field .text {*/
+/*    -fx-effect: dropshadow(two-pass-box,blue,.5,10,1,1);*/
+/*}*/
+/*.text-field:empty .text {*/
+/*    -fx-effect: null;*/
+/*}*/
+
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background;
+}
+
+#button_send {
+    -fx-focus-traversable: false;
+}
+
+#button_send:hover {
+    -fx-border-radius: 1000px;
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+/*#text_filed,*/
+/*#text_filed2,*/
+/*#text_filed3  {*/
+/*    -fx-border-radius: 50px;*/
+/*    -fx-text-fill: black;*/
+/*    -fx-background-color: white;*/
+/*    -fx-border-color: white;*/
+/*}*/
+
+#sp_main {
+    -fx-background-color: white;
+    -fx-border-radius: 0;
+}
